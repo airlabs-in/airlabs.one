@@ -160,6 +160,10 @@ a.menu-link {
   .main-menu li {
     margin-left: 5px !important;
   }
+
+  .logo img {
+    width: 75px;
+  }
 }
 
 .main-header {
@@ -175,6 +179,10 @@ a.menu-link {
   float: left;
   line-height: 80px;
   padding-left: 60px;
+}
+
+.logo img {
+  width: 92px;
 }
 
 .main-header .logo a {
