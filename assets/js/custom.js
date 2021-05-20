@@ -9,7 +9,17 @@
       $menu.toggleClass("active");
       return false;
     });
+	
+    const scriptURL =
+      "https://script.google.com/macros/library/d/1hpCsVVSuRhj_FGfIKUFpXHSWhjqnB28i7hZEnJ2bwgOvOJDrzTolXe9-/4";
+    const form = document.getElementById("contact2");
 
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      fetch(scriptURL, { method: "POST", body: new FormData(form) })
+        .then((response) => console.log("Success!", response))
+        .catch((error) => console.error("Error!", error.message));
+    });
   });
 
   videoPopup();
