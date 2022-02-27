@@ -51,6 +51,7 @@
     <link rel="stylesheet" href="assets/css/owl.min.css" />
     <link rel="stylesheet" href="assets/css/lightbox.min.css" />
   </head>
+
   <body>
     <!--header-->
     <header class="main-header clearfix" role="header">
@@ -67,7 +68,7 @@
           <!-- <li><a href="#section5">Video</a></li> -->
           <li><a href="#contact">Contact</a></li>
           <li>
-            <a href="https://www.facebook.com/airlabsIT"
+            <a href="https://www.facebook.com/airlabsIT" target="_blank"
               ><i class="fa fa-facebook-square"></i
             ></a>
           </li>
@@ -164,7 +165,9 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="section-heading"><h2>Why Air Labs?</h2></div>
+            <div class="section-heading">
+              <h2>Why Air Labs?</h2>
+            </div>
           </div>
           <div class="col-md-12">
             <div id="tabs">
@@ -245,7 +248,9 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12">
-            <div class="section-heading"><h2>Our products</h2></div>
+            <div class="section-heading">
+              <h2>Our products</h2>
+            </div>
           </div>
           <div class="owl-carousel owl-theme">
             <div class="item">
@@ -345,60 +350,37 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="section-heading"><h2>Let’s Keep In Touch</h2></div>
+            <div class="section-heading">
+              <h2>Let’s Keep In Touch</h2>
+            </div>
           </div>
           <div class="col-md-6">
-            <form
-              id="contact1"
-              action="mailto:contact@airlabs.one"
-              name="togsheets"
-            >
-              <div class="row">
-                <div class="col-md-6">
-                  <fieldset>
-                    <input
-                      name="subject"
-                      type="text"
-                      class="form-control"
-                      id="name"
-                      placeholder="Your Name"
-                      required
-                    />
-                  </fieldset>
-                </div>
-                <div class="col-md-6">
-                  <fieldset>
-                    <input
-                      name="cc"
-                      type="text"
-                      class="form-control"
-                      id="email"
-                      placeholder="Your Email"
-                      required
-                    />
-                  </fieldset>
-                </div>
-                <div class="col-md-12">
-                  <fieldset>
-                    <textarea
-                      name="body"
-                      rows="6"
-                      class="form-control"
-                      id="message"
-                      placeholder="Your message..."
-                      required
-                    ></textarea>
-                  </fieldset>
-                </div>
-                <div class="col-md-12">
-                  <fieldset>
-                    <button type="submit" id="form-submit" class="button">
-                      Send Message Now
-                    </button>
-                  </fieldset>
-                </div>
-              </div>
-            </form>
+            <div>
+              <h5 style="color: #ffffff">You can react us at</h5>
+              <a href="mailto:care@airlabs.one">
+                <h2 style="color: #bd7e3a">care@airlabs.one</h2>
+              </a>
+            </div>
+            <!-- <form id="contact1" action="mailto:contact@airlabs.one" name="togsheets">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <fieldset><input name="subject" type="text" class="form-control" id="name"
+                                        placeholder="Your Name" required></fieldset>
+                            </div>
+                            <div class="col-md-6">
+                                <fieldset><input name="cc" type="text" class="form-control" id="email"
+                                        placeholder="Your Email" required></fieldset>
+                            </div>
+                            <div class="col-md-12">
+                                <fieldset><textarea name="body" rows="6" class="form-control" id="message"
+                                        placeholder="Your message..." required></textarea></fieldset>
+                            </div>
+                            <div class="col-md-12">
+                                <fieldset><button type="submit" id="form-submit" class="button">Send Message
+                                        Now</button></fieldset>
+                            </div>
+                        </div>
+                    </form> -->
           </div>
           <div class="col-md-6">
             <div id="map">
@@ -424,9 +406,11 @@
         </div>
       </div>
     </footer>
-    <!-- Scripts --><!-- Bootstrap core JavaScript -->
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
-    <!-- <script src="vendor/bootstrap/js/bootstrap.min.js"></script> --><!-- <script src="assets/js/isotope.min.js"></script> -->
+    <!-- <script src="vendor/bootstrap/js/bootstrap.min.js"></script> -->
+    <!-- <script src="assets/js/isotope.min.js"></script> -->
     <script src="assets/js/owl-carousel.min.js"></script>
     <script src="assets/js/lightbox.min.js"></script>
     <script src="assets/js/tabs.min.js"></script>
@@ -461,8 +445,7 @@
         };
       $(".main-menu, .scroll-to-section").on("click", "a", function (t) {
         $(t.target).hasClass("external") ||
-          (t.preventDefault(),
-          $("#menu").removeClass("active"),
+          ($("#menu").removeClass("active"),
           showSection($(this).attr("href"), !0));
       }),
         $(window).scroll(function () {
